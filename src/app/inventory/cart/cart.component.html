@@ -1,4 +1,5 @@
-<div class="agency">
+<div>
+  <h4 class="title">Welcome To ACME Cart</h4>
   <!-- section start -->
   <section class="cart-section section-b-space">
     <div class="container">
@@ -37,14 +38,14 @@
                   />
                 </td>
                 <td>
-                  <a [routerLink]="['/e-commerce/roduct', item.product.id]">{{
-                    item.product.name
-                  }}</a>
                   <div class="mobile-cart-content row">
                     <div class="col-xs-3">
                       <h2 class="td-color">
-                        {{ item.product.discription }}
+                        {{ item.product.name }}
                       </h2>
+                      <p>
+                        {{ item.product.discription }}
+                      </p>
                     </div>
                     <div class="col-xs-3">
                       <h2 class="td-color">
@@ -141,15 +142,35 @@
             continue shopping
           </button>
         </div>
-        <div class="col-4">
-          <label>Send Receipt To:</label>
-          <input />
-        </div>
-        <div class="col-4">
-          <button (click)="removeAllItems()" class="cart-button">
-            Buy Now
-          </button>
-        </div>
+        <form [formGroup]="EmailForm" (ngSubmit)="sendEmail()">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label>Send Receipt To:</label>
+                <input
+                  id="email"
+                  type="email"
+                  class="form-control"
+                  name="Email"
+                  aria-describedby="emailHelp"
+                  formControlName="Email"
+                />
+                <small id="emailHelp" class="form-text font-primary">
+                  We Won't share your email with anyone!
+                </small>
+              </div>
+            </div>
+            <div class="col-6">
+              <button
+                class="cart-button"
+                type="submit"
+                [disabled]="!EmailForm.valid"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </section>

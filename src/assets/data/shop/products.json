@@ -1,58 +1,58 @@
 [
   {
     "id": 1,
-    "img": "assets/images/product-images/1.jpg",
+    "img": "assets/images/product-images/chocolate.jpg",
     "name": "chocolate",
-    "discription": "bla bla bla",
-    "price": 100.0,
-    "stock": 5
+    "discription": "creamy with nuts an caramel",
+    "price": 10.0,
+    "stock": 1
   },
   {
     "id": 2,
-    "img": "assets/images/product-images/1.jpg",
-    "name": "test2",
-    "discription": "bla bla bla",
-    "price": 100.0,
+    "img": "assets/images/product-images/beer.jpg",
+    "name": "Beer",
+    "discription": "very special and soft",
+    "price": 17.0,
     "stock": 5
   },
   {
     "id": 3,
-    "img": "assets/images/product-images/1.jpg",
-    "name": "test3",
-    "discription": "bla bla bla",
-    "price": 100.0,
-    "stock": 5
+    "img": "assets/images/product-images/coffee.jpg",
+    "name": "coffee",
+    "discription": "strong and delicious",
+    "price": 10.0,
+    "stock": 3
   },
   {
     "id": 4,
-    "img": "assets/images/product-images/1.jpg",
-    "name": "test4",
-    "discription": "bla bla bla",
-    "price": 500.0,
-    "stock": 5
+    "img": "assets/images/product-images/nuts.jpg",
+    "name": "nuts",
+    "discription": "Fresh and crunchy",
+    "price": 20.0,
+    "stock": 10
   },
   {
     "id": 5,
-    "img": "assets/images/product-images/1.jpg",
-    "name": "test5",
-    "discription": "bla bla bla",
-    "price": 150.0,
-    "stock": 5
+    "img": "assets/images/product-images/coconutwater.webp",
+    "name": "coconut water",
+    "discription": "Delicious and healthy",
+    "price": 15.0,
+    "stock": 6
   },
   {
     "id": 6,
-    "img": "assets/images/product-images/1.jpg",
-    "name": "test6",
-    "discription": "bla bla bla",
-    "price": 90.0,
-    "stock": 5
+    "img": "assets/images/product-images/apples.jpg",
+    "name": "apples",
+    "discription": "fresh and organic",
+    "price": 5.0,
+    "stock": 15
   },
   {
     "id": 7,
-    "img": "assets/images/product-images/1.jpg",
-    "name": "test7",
-    "discription": "bla bla bla",
-    "price": 1050.0,
-    "stock": 9
+    "img": "assets/images/product-images/lemon.jpg",
+    "name": "lemon",
+    "discription": "fulled with vitamins, fresh and juicy",
+    "price": 10.0,
+    "stock": 6
   }
 ]

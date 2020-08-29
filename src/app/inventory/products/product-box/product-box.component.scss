@@ -20,10 +20,12 @@
 
 .product-wrapper {
   width: 300px;
-
+  height: 500px;
+  box-shadow: 5px 7px gray;
   border: 1px solid rgb(0, 0, 0);
   padding: 50px;
   margin: 20px;
+  border-radius: 20px;
 }
 .product-box {
   .product-detail {

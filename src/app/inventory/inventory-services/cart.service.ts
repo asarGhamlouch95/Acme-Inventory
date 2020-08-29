@@ -54,9 +54,9 @@ export class CartService {
         let stock = this.calculateStockCounts(products[index], quantity);
         if (!stock) this.toastr.error('Sorry We have no more in stock');
         if (qty != 0 && stock) {
+          this.toastr.success('Item Added to cart ' + product.name);
           products[index]['quantity'] = qty;
           localStorage.setItem('cartItem', JSON.stringify(products));
-          this.toastr.success('Item Added to cart');
         }
         return true;
       }
