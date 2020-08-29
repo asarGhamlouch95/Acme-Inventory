@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "img": "assets/images/product-images/1.jpg",
+    "name": "chocolate",
+    "discription": "bla bla bla",
+    "price": 100.0,
+    "stock": 5
+  },
+  {
+    "id": 2,
+    "img": "assets/images/product-images/1.jpg",
+    "name": "test2",
+    "discription": "bla bla bla",
+    "price": 100.0,
+    "stock": 5
+  },
+  {
+    "id": 3,
+    "img": "assets/images/product-images/1.jpg",
+    "name": "test3",
+    "discription": "bla bla bla",
+    "price": 100.0,
+    "stock": 5
+  },
+  {
+    "id": 4,
+    "img": "assets/images/product-images/1.jpg",
+    "name": "test4",
+    "discription": "bla bla bla",
+    "price": 500.0,
+    "stock": 5
+  },
+  {
+    "id": 5,
+    "img": "assets/images/product-images/1.jpg",
+    "name": "test5",
+    "discription": "bla bla bla",
+    "price": 150.0,
+    "stock": 5
+  },
+  {
+    "id": 6,
+    "img": "assets/images/product-images/1.jpg",
+    "name": "test6",
+    "discription": "bla bla bla",
+    "price": 90.0,
+    "stock": 5
+  },
+  {
+    "id": 7,
+    "img": "assets/images/product-images/1.jpg",
+    "name": "test7",
+    "discription": "bla bla bla",
+    "price": 1050.0,
+    "stock": 9
+  }
+]

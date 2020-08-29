@@ -1,0 +1,37 @@
+.product-buttons {
+  a {
+    &:last-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+.button {
+  background-color: #fa1212;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.product-wrapper {
+  width: 300px;
+
+  border: 1px solid rgb(0, 0, 0);
+  padding: 50px;
+  margin: 20px;
+}
+.product-box {
+  .product-detail {
+    h6 {
+      color: white;
+    }
+    h4 {
+      color: white;
+    }
+  }
+}

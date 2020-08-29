@@ -1,0 +1,10 @@
+<div class="isotopeContainer row">
+  <div
+    class="col-lg-3 col-sm-6 isotopeSelector branding new"
+    *ngFor="let product of products"
+  >
+    <div class="product-box">
+      <app-product-box [products]="product"></app-product-box>
+    </div>
+  </div>
+</div>

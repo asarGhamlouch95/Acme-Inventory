@@ -1,0 +1,86 @@
+<div class="product-wrapper">
+  <div>
+    <div class="front">
+      <a href="product-page(no-sidebar).html">
+        <h6>{{ products.name }}</h6>
+      </a>
+      <a>
+        <img
+          alt=""
+          class="img-fluid"
+          [routerLink]=""
+          (click)="open(content, products.id)"
+          [attr.data-target]="'#quick-view' + products.id"
+          [src]="products.img"
+        />
+      </a>
+    </div>
+  </div>
+  <div>
+    <h4 *ngIf="available_stock">${{ products.price }}</h4>
+    <h4 *ngIf="!available_stock">unavailable</h4>
+    <button class="button" (click)="addToCart(products)">Add To Cart</button>
+  </div>
+</div>
+<!-- Quick view Popup -->
+<ng-template #content let-modal>
+  <div class="modal-body">
+    <button type="button" class="close" (click)="modal.close('Save click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+        <div class="quick-view-img">
+          <img [src]="products.img" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <div class="col-lg-6 rtl-text">
+        <div class="product-right">
+          <h2>{{ products.name }}</h2>
+          <h3>
+            {{ products.price | currency: productsService?.currency:"symbol" }}
+          </h3>
+
+          <div class="border-product">
+            <h6 class="product-title">product details</h6>
+            <p>{{ products.discription | slice: 0:200 }}</p>
+          </div>
+          <div class="product-description border-product">
+            <div class="qty-box">
+              <div class="input-group">
+                <span class="input-group-prepend">
+                  <button
+                    type="button"
+                    class="btn quantity-left-minus"
+                    (click)="decrement()"
+                    data-type="minus"
+                    data-field=""
+                  >
+                    <i class="fa fa-chevron-left"></i>
+                  </button>
+                </span>
+
+                <span class="input-group-prepend">
+                  <button
+                    type="button"
+                    class="btn quantity-right-plus"
+                    (click)="increment()"
+                    data-type="plus"
+                    data-field=""
+                  >
+                    <i class="fa fa-chevron-right"></i>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="product-buttons">
+            <button class="button" (click)="addToCart(products)">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
