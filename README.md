@@ -13,5 +13,9 @@ Run `node src/server.js` to enable sendingEmail service.
 
 ## Some pictures from the live website
 
+![Image](https://github.com/asarGhamlouch95/Acme-Inventory/blob/master/demo-images/ACME_Inventory.jpeg)
 
+![Image](https://github.com/asarGhamlouch95/Acme-Inventory/blob/master/demo-images/item-popup.jpeg)
+
+![Image](https://github.com/asarGhamlouch95/Acme-Inventory/blob/master/demo-images/Cart.jpeg)
 
