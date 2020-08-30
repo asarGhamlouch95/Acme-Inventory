@@ -59,7 +59,9 @@ export class CartComponent implements OnInit {
     this.http
       .post(
         'http://localhost:3000/sendEmail',
-        new HttpParams().set('data', JSON.stringify(this.emailData)),
+        new HttpParams()
+          .set('email', JSON.stringify(this.emailData))
+          .set('data', JSON.stringify(this.shoppingCartItems)),
         { headers: new HttpHeaders() }
       )
       .subscribe(() => {

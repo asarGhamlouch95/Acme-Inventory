@@ -28,7 +28,24 @@ let transporter = nodemailer.createTransport({
 });
 
 app.post("/sendEmail", function (req, res) {
-  const email = JSON.parse(req.body.data);
+  const email = JSON.parse(req.body.email);
+  var orderProducts = JSON.parse(req.body.data);
+  var receipt = "";
+  var totalPrice = 0;
+  for (var i = 0; i < orderProducts.length; i++) {
+    receipt +=
+      i +
+      1 +
+      "-" +
+      orderProducts[i].product.name +
+      "        " +
+      orderProducts[i].quantity +
+      "        $" +
+      orderProducts[i].quantity * orderProducts[i].product.price +
+      "\n";
+    totalPrice += orderProducts[i].quantity * orderProducts[i].product.price;
+  }
+  console.log(orderProducts);
   console.log(email);
   const mailOptions = {
     from: "tst28463@gmail.com",
@@ -37,7 +54,13 @@ app.post("/sendEmail", function (req, res) {
     text:
       "Message From: " +
       "ACME Inventory" +
-      "This is a Comfirmation email of your order!",
+      "This is a Comfirmation email of your order!" +
+      "\n" +
+      receipt +
+      "---------------------" +
+      "\n" +
+      "Total Price: $" +
+      totalPrice,
   };
   transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
